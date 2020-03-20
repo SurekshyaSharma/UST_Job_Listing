@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>UST-Job</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.3/jquery.csv.min.js"></script>
+        <script type="text/javascript" lang="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+
+        <script type="text/javascript" src="./Job_listing.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron" style="text-align: center;">
+                <h1 id="headerTitle">St. Thomas Job Listing</h1>
+            </div>
+
+            <div id="searchJobbar">
+
+                <div class="custom-select" style="text-align: center;">
+                    <select name="empType" id="empType" class="select-selected">
+                        <option value="" selected disabled hidden>Employment Type</option>
+                    </select>
+
+                    <select name="departments" id="departments" class="select-selected">
+                        <option value="" selected disabled hidden>Department</option>
+                    </select>
+
+                    <select name="location" id="location" class="select-selected">
+                        <option value="" selected disabled hidden>Location</option>
+                    </select>
+                </div>
+                <div class="search-btn-group" style="font-weight:bold">
+                    <!-- <button onclick="filtered_display()">Search</button> -->
+                    <button onclick="clear_filter()" id="clear">Clear</button>
+                </div>
+
+            </div>
+            
+            <form class="search">
+                <input type="text" id="searchInput" placeholder="Search by job type, department or location...">
+                <button onclick="search(event);return false;" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <div id="showjobs">
+
+                <div id="joblist" class="clicker"></div>
+               
+            </div>
+
+        </div>
+        
+    </body>
+
+</html>

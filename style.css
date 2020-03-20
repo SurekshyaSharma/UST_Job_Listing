@@ -1,0 +1,186 @@
+#li {
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0px 0px 5px 5px;
+}
+
+#jobDiscription {
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+   
+}
+
+#searchJobbar {
+    width: 100%;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+#showjobs {
+    overflow: auto;
+    height: 600px;
+    width: 100%; 
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0 20px 0 20px;
+    border-top: 5px solid #eee;
+    border-left: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+    box-shadow: inset 0 1px 10px rgba(0, 0, 0, .3);
+}
+
+#a {
+    display:block;
+    width:fit-content;
+    height:fit-content;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    position: relative;
+    width: 75%;
+    float: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.select-selected {
+    background-color: transparent;
+    width: calc(100% / 3.5);
+    margin: 6px;
+    height: 30px;
+}
+
+.search-btn-group {
+    width: 25%;
+    float: right;
+    text-align: right;
+}
+
+.search-btn-group button {
+    background-color: #8348ad;
+    border: 1px solid #98999b;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    float: left;
+    border-radius: 5px;
+    height: auto;
+    width: 80px;
+}
+
+/* Clear floats (clearfix hack) */
+.search-btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.search-btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+.clicker {
+    height: auto;
+    width: 100%;
+}
+
+/* Add a background color on hover */
+.search-btn-group button:hover,
+.search-btn-group button:focus {
+    background-color: #9e28b5;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.my-notify-info {
+    margin: 10px 0px;
+    padding: 12px;
+    /* color: #00529B; */
+    background-color: #eee;
+    text-align: center;
+    font-weight: 550;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.my-notify-info:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.my-notify-info:before {
+    content: " \2639";
+}
+
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+   
+  }
+  
+  form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #8348ad;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.search button:hover {
+    background: #9e28b5;
+  }
+  
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+  
+  
